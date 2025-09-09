@@ -6,7 +6,7 @@
     <title>CashReward App</title>
     
     <!-- Aapka Naya Ad Code -->
-    <script src='//libtl.com/sdk.js' data-zone='9391539' data-sdk='show_9391539'></script>
+    <script src='//libtl.com/sdk.js' data-zone='9807531' data-sdk='show_9807531'></script>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1284,7 +1284,7 @@
                 return;
             }
             
-            if (typeof window.show_9391539 !== 'function') {
+            if (typeof window.show_9807531 !== 'function') {
                 showAlert("Ad service abhi uplabdh nahi hai. Kripya baad mein prayas karein.");
                 return;
             }
@@ -1307,13 +1307,13 @@
             try {
                 switch(taskType) {
                     case 'interstitial':
-                        adPromise = window.show_9391539();
+                        adPromise = window.show_9807531();
                         break;
                     case 'popup':
-                        adPromise = window.show_9391539('pop');
+                        adPromise = window.show_9807531('pop');
                         break;
                     case 'inApp':
-                        adPromise = window.show_9391539({ 
+                        adPromise = window.show_9807531({ 
                             type: 'inApp', 
                             inAppSettings: { 
                                 frequency: 2, 
@@ -1325,7 +1325,7 @@
                         });
                         break;
                     case 'miniApp':
-                        adPromise = window.show_9391539();
+                        adPromise = window.show_9807531();
                         break;
                 }
                 
@@ -1400,4 +1400,3 @@
     </script>
 </body>
 </html>
-
